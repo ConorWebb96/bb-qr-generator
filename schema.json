@@ -94,7 +94,7 @@
         "type": "select",
         "label": "Mime type",
         "key": "mimeType",
-        "defaultValue": "image/png",
+        "defaultValue": "png",
         "showInBar": true,
         "barStyle": "picker",
         "options": [

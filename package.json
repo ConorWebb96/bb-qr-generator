@@ -1,6 +1,6 @@
 {
   "name": "bb-qr-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Qr code generation and display",
   "license": "MIT",
   "svelte": "index.js",
