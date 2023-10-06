@@ -1,0 +1,121 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "bb-qr-generator",
+    "friendlyName": "bb-qr-generator",
+    "description": "Qr code generation and display",
+    "icon": "ImageMapCircle",
+    "settings": [
+      {
+        "type": "text",
+        "key": "url",
+        "label": "Url"
+      },
+      {
+        "type": "select",
+        "label": "Size",
+        "key": "size",
+        "defaultValue": "128",
+        "showInBar": true,
+        "barStyle": "picker",
+        "options": [
+          {
+            "label": "Extra small",
+            "value": "32"
+          },
+          {
+            "label": "Small",
+            "value": "64"
+          },
+          {
+            "label": "Medium",
+            "value": "128"
+          },
+          {
+            "label": "Large",
+            "value": "256"
+          },
+          {
+            "label": "Extra large",
+            "value": "512"
+          },
+          {
+            "label": "2XL",
+            "value": "1024"
+          },
+          {
+            "label": "3XL",
+            "value": "2048"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "label": "Colors",
+        "key": "palette",
+        "defaultValue": "Default",
+        "options": [
+          "Default",
+          "Inverted",
+          "Palette 2",
+          "Inverted 2",
+          "Palette 3",
+          "Inverted 3"
+        ]
+      },
+      {
+        "type": "select",
+        "label": "Error correction",
+        "key": "errorCorrection",
+        "defaultValue": "L",
+        "showInBar": true,
+        "barStyle": "picker",
+        "options": [
+          {
+            "label": "Low",
+            "value": "L"
+          },
+          {
+            "label": "Medium",
+            "value": "M"
+          },
+          {
+            "label": "Quartile",
+            "value": "Q"
+          },
+          {
+            "label": "High",
+            "value": "H"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "label": "Mime type",
+        "key": "mimeType",
+        "defaultValue": "image/png",
+        "showInBar": true,
+        "barStyle": "picker",
+        "options": [
+          {
+            "label": "image/png",
+            "value": "png"
+          },
+          {
+            "label": "image/jpeg",
+            "value": "jpeg"
+          },
+          {
+            "label": "image/gif",
+            "value": "gif"
+          },
+          {
+            "label": "image/svg",
+            "value": "svg"
+          }
+        ]
+      }
+    ]
+  }
+}
