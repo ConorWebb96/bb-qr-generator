@@ -8,9 +8,41 @@
     "icon": "ImageMapCircle",
     "settings": [
       {
+        "type": "select",
+        "label": "Genertor Type",
+        "key": "genType",
+        "defaultValue": "qrCode",
+        "showInBar": true,
+        "barStyle": "picker",
+        "options": [
+          {
+            "label": "QrCode",
+            "value": "qrCode"
+          },
+          {
+            "label": "BarCode",
+            "value": "barCode"
+          }
+        ]
+      },
+      {
         "type": "text",
         "key": "url",
-        "label": "Url"
+        "label": "Url",
+        "dependsOn": {
+          "setting": "genType",
+          "value": "qrCode"
+        }
+      },
+      {
+        "type": "text",
+        "key": "barcode",
+        "label": "Barcode",
+        "defaultValue": "Change value here",
+        "dependsOn": {
+          "setting": "genType",
+          "value": "barCode"
+        }
       },
       {
         "type": "select",
@@ -88,7 +120,11 @@
             "label": "High",
             "value": "H"
           }
-        ]
+        ],
+        "dependsOn": {
+          "setting": "genType",
+          "value": "qrCode"
+        }
       },
       {
         "type": "select",
@@ -114,7 +150,11 @@
             "label": "image/svg",
             "value": "svg"
           }
-        ]
+        ],
+        "dependsOn": {
+          "setting": "genType",
+          "value": "qrCode"
+        }
       }
     ]
   }

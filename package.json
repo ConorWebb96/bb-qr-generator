@@ -1,6 +1,6 @@
 {
   "name": "bb-qr-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Qr code generation and display",
   "license": "MIT",
   "svelte": "index.js",
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@crownframework/svelte-error-boundary": "^1.0.3",
+    "jsbarcode": "^3.11.5",
     "qrious": "^4.0.2",
     "svelte": "^3.49.0"
   },
